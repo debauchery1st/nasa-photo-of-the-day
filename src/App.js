@@ -3,10 +3,8 @@ import "./App.css";
 import axios from "axios";
 import { NASA_API_KEY } from "./myconfig";
 
-function NasaPhoto(props) {
-  // photo of the day
-  return <img className="NasaPhoto" alt={props.alt} src={props.src} />
-}
+import Picture from "./Picture"
+import Frame from "./Frame";
 
 function App() {
   const [meta, setMeta] = useState({}); // result of API call
@@ -23,11 +21,11 @@ function App() {
   // refer to the meta from 
   return (
     <div className="App">
+      <Frame Picture={<Picture key="photo" src={meta.url} alt={meta.title} hdsrc={meta.hdurl} />}></Frame>
       <p>
         Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
+        app! Have fun!
       </p>
-      <NasaPhoto key="photo" src={meta.hdurl} alt={meta.title} />
     </div>
   );
 }
