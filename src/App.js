@@ -17,7 +17,7 @@ function App() {
     const apod = new axios.get(nasaPhotoOfDay).then((result) => {
       const apiData = result.data; // reference (selector)
       setMeta(apiData); // store the payload
-    });
+    }).catch((error) => console.log);
   }, []);
   // refer to the meta from 
   return (
@@ -25,11 +25,11 @@ function App() {
       <Frame prevButton={<Button key="prev" label="<" callback={() =>console.log("< previous")} / >}
              nextButton={<Button key="next" label=">" callback={() =>console.log("next >")} / >}
              Picture={<Picture key="photo" src={meta.url} alt={meta.title} hdsrc={meta.hdurl} / >}
-             title={meta.title} desc={meta.explanation} / >
-      <p>
+             title={meta.title || "..."} desc={meta.explanation || "waiting for response."} / >
+      {/* <p>
         Read through the instructions in the README.md file to build your NASA
         app! Have fun!
-      </p>
+      </p> */}
     </div>
   );
 }
