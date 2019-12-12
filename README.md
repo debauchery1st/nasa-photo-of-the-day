@@ -50,14 +50,14 @@ Follow these steps for completing your project.
 **Step 1 - Planning**
 
 - [/] If you want, this is the time to make a simple design spec (look up ["simple wireframes"](https://www.google.com/search?q=simple+wireframes) to find resources & examples). **A pen & paper sketch (or outline) is often the fastest way to start your planning.**
-- [ ] Once you have a design plan in mind, break down the designs into individual components.
-- [ ] Plan which components will hold state, what data each needs from props (if any), and where you will be making your data fetch.
-- [ ] Now it's time to jump into the code!
+- [/] Once you have a design plan in mind, break down the designs into individual components.
+- [✅] Plan which components will hold state, what data each needs from props (if any), and where you will be making your data fetch.
+- [✅] Now it's time to jump into the code!
 
 **Step 2 - File structure**
 
-- [ ] Take a look at your planned components. Create the folders and files you need for each component.
-- [ ] Leave most of them blank for now - you need to get your data from the API before you can really get these built.
+- [✅] Take a look at your planned components. Create the folders and files you need for each component.
+- [✅] Leave most of them blank for now - you need to get your data from the API before you can really get these built.
 
 **Step 3 - Fetching the Data**
 
@@ -87,7 +87,7 @@ Now is the time to build out your other components. Compose your UI, and then pa
 ## _MVP Requirements:_
 
 - [✅] Use the effect hook to fetch the APOD data when the component mounts.
-- [ ] Display the APOD data in different components that are composed together to build your UI.
+- [✅] Display the APOD data in different components that are composed together to build your UI.
 
 ## Pro Tips:
 

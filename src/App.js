@@ -5,6 +5,7 @@ import { NASA_API_KEY } from "./myconfig";
 
 import Picture from "./Picture"
 import Frame from "./Frame";
+import Button from "./Button";
 
 function App() {
   const [meta, setMeta] = useState({}); // result of API call
@@ -21,7 +22,10 @@ function App() {
   // refer to the meta from 
   return (
     <div className="App">
-      <Frame Picture={<Picture key="photo" src={meta.url} alt={meta.title} hdsrc={meta.hdurl} />}></Frame>
+      <Frame prevButton={<Button key="prev" label="<" callback={() =>console.log("< previous")} / >}
+             nextButton={<Button key="next" label=">" callback={() =>console.log("next >")} / >}
+             Picture={<Picture key="photo" src={meta.url} alt={meta.title} hdsrc={meta.hdurl} / >}
+             title={meta.title} desc={meta.explanation} / >
       <p>
         Read through the instructions in the README.md file to build your NASA
         app! Have fun!
