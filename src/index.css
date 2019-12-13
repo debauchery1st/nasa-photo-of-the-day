@@ -1,13 +1,67 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+#root {
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  color: whitesmoke;
+  width: 100%;
+  height: auto;
+}
+.card {
+  background-color: #003B6F;
+}
+.card-title {
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+.card-text {
+  background-color: #000000;
+  padding: 2rem;
+  border: 1px solid #3ca4ff;
+  margin: 0.5rem 0;
+  text-align: justify;
+}
+.card-text.boti {
+  text-align: center;
+}
+.card-img-bottom {
+  border: 1px solid #000000;
+}
+.tardis-inside {
+  display: inline-flex;
+  letter-spacing: 2px;
+  margin: 0 0.5rem;
+  text-align: center;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+}
+.big-blue-box {
+  display: inline-flex;
+  font-size: xx-large;
+  align-items: center;
+}
+.stacked {
+  display: inline-flex;
+  justify-content: center;
+  font-size: smaller;
+  align-items: center;
+}
+.bigger-on-the-inside {
+  display: flex;
+  justify-content: center;
+  background-color: #000000;
+  font-family: 'Gill Sans';
+  border: 1px solid whitesmoke;
+  margin-bottom: 1rem;
 }
