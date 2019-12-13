@@ -15,49 +15,53 @@ code {
   width: 100%;
   height: auto;
 }
-.Picture {
-  display: flex;
-  width: 100%;
-  border-radius: 2rem;
-  border: 1px solid black;
+.card {
+  background-color: #003B6F;
 }
-.FrameColumn {
-  display: flex;
-  flex-direction: column;
-  background-color: crimson;
-  border-radius: 2rem;
-  border: 2px solid darkgrey;
-  margin: 2%;
+.card-title {
+  font-size: 1rem;
+  margin: 1rem 0;
 }
-.FrameRow {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: crimson;
-  border-radius: 2rem;
-  padding: 2%;
-}
-h1.title {
-  padding-top: 1rem;
-  color: whitesmoke;
-  letter-spacing: 2px;
-}
-p.description {
-  margin: 0 1rem 2rem;
-  text-align: left;
-  font-size: 1.2rem;
+.card-text {
+  background-color: #000000;
   padding: 2rem;
-  border-radius: 2rem;
-  border: 1px solid darkgray;
-  background-color: #67091c;
+  border: 1px solid #3ca4ff;
+  margin: 0.5rem 0;
+  text-align: justify;
 }
-.Button {
+.card-text.boti {
+  text-align: center;
+}
+.card-img-bottom {
+  border: 1px solid #000000;
+}
+.tardis-inside {
+  display: inline-flex;
+  letter-spacing: 2px;
+  margin: 0 0.5rem;
+  text-align: center;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+}
+.big-blue-box {
+  display: inline-flex;
+  font-size: xx-large;
+  align-items: center;
+}
+.stacked {
+  display: inline-flex;
+  justify-content: center;
+  font-size: smaller;
+  align-items: center;
+}
+.bigger-on-the-inside {
   display: flex;
-  padding: 1.6rem;
-  margin: 1rem;
-  background-color: white;
-  color: black;
-  border-radius: 2rem;
-  border: 1px solid black;
+  justify-content: center;
+  background-color: #000000;
+  font-family: 'Gill Sans';
+  border: 1px solid whitesmoke;
+  margin-bottom: 1rem;
 }
